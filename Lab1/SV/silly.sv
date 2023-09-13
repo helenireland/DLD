@@ -1,5 +1,7 @@
-module silly (input  logic a, b, c, output logic y);
+module silly (input  logic a, b, c, output logic cin, sum);
    
-  assign y = ~b & ~c | a & ~b;
+  assign sum = a ^ b ^ c;
+
+  assign cin = (a & b) | (a & c) | (b & c);
    
 endmodule
