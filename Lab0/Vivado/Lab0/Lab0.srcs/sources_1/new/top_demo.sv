@@ -27,7 +27,10 @@ module top_demo
   output logic [7:0] led
 );
 
-  assign led[3:0] = sw;
-  assign led[7:4] = btn;
+ 
+//port ordered
+silly dut(sw[0], sw[1], sw[2], led[1], led[0]);
 
+// other way
+// silly dut (.a(sw[0]), .c(sw[2]) ... etc);
 endmodule
