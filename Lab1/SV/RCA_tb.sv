@@ -9,7 +9,7 @@ logic [3:0]       a;
    logic [3:0] 	b;
    logic 	c;
    
-   logic [3:0] y;
+   logic y;
    logic [3:0] sum;
    logic [2:0] cin;
    logic        clk;
